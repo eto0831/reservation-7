@@ -13,5 +13,5 @@ WORKDIR /var/www
 
 # SchedulerスクリプトとSupervisor設定を追加
 COPY scheduler.sh /usr/local/bin/scheduler.sh
-COPY supervisor.conf /etc/supervisor/conf.d/supervisord.conf
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN chmod +x /usr/local/bin/scheduler.sh

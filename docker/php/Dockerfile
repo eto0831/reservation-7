@@ -1,5 +1,7 @@
 FROM php:7.4.9-fpm
 
+COPY php.ini /usr/local/etc/php/
+
 # 必要なツールと拡張機能をインストール
 RUN apt update \
   && apt install -y default-mysql-client zlib1g-dev libzip-dev unzip libpng-dev tzdata cron \
